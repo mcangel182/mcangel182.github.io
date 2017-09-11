@@ -3113,7 +3113,7 @@ Main components
   height: 83%;
   width: 4px;
   background: #ddd;
-  margin-top: 150px;
+  margin-top: 8em;
 }
 /*@media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -3310,6 +3310,9 @@ Main components
   border-right: 7px solid #eee;
 }
 @media only screen and (min-width: 736px) {
+  #cd-timeline::before {
+    margin-top: 11em;
+  }
   .cd-timeline-content h4 {
     font-size: 20px;
     font-size: 1.25rem;
