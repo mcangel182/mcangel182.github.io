@@ -2091,6 +2091,15 @@
 					text-transform: none !important;
 				}
 
+				ul.feature-icons li.custom-icon:before {
+					-moz-osx-font-smoothing: grayscale;
+					-webkit-font-smoothing: antialiased;
+					font-family: 'icomoon' !important;
+					font-style: normal;
+					font-weight: normal;
+					text-transform: none !important;
+				}
+
 				ul.feature-icons li:before {
 					background: #4acaa8;
 					border-radius: 100%;
@@ -2395,6 +2404,16 @@
 			input[type="button"].special:active,
 			.button.special:active {
 				background-color: #39c29d;
+			}
+
+			input[type="submit"].special.right,
+			input[type="reset"].special.right,
+			input[type="button"].special.right,
+			.button.special.right {
+				position: absolute;
+    			top: 0px;
+    			right: 0px;
+    			margin-top: 4em;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2901,6 +2920,10 @@
 			}
 
 			h4 {
+				font-size: 1.25em;
+			}
+
+			h5 {
 				font-size: 1em;
 			}
 
@@ -2932,7 +2955,7 @@
 
 			.features article .image {
 				display: block;
-				margin: 0 0 2.25em 0;
+				/*margin: 0 0 2.25em 0;*/
 				padding-right: 0;
 				width: 100%;
 			}
@@ -3512,6 +3535,38 @@ Main components
   }
 }
 
+/* Custom icons */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?lawtur');
+  src:  url('fonts/icomoon.eot?lawtur#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lawtur') format('truetype'),
+    url('fonts/icomoon.woff?lawtur') format('woff'),
+    url('fonts/icomoon.svg?lawtur#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-si-glyph-foot-sign:before {
+  content: "\e901";
+}
+.icon-si-glyph-casette:before {
+  content: "\e902";
+}
+.icon-si-glyph-hightheel:before {
+  content: "\e903";
+}
+.icon-si-glyph-mask-1:before {
+  content: "\e904";
+}
+.icon-si-glyph-mark-snorker:before {
+  content: "\e905";
+}
+.icon-si-glyph-sewing-roll:before {
+  content: "\e900";
+}
+
 /* Progress bar */
 
 .skills-section p{
@@ -3591,3 +3646,26 @@ width:110px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
 }
+
+/* Playlists*/
+
+.playlists {
+    width:100%;
+ text-align:center;
+
+}
+
+.playlists>.playlist { 
+  display: block;
+  vertical-align: top;   
+  text-align:center;
+  margin:2% 0;    
+}
+
+@media only screen and (min-width: 736px) {
+  .playlists>.playlist {
+    display: inline-block;
+    width: 48%; 
+  }
+}
+
