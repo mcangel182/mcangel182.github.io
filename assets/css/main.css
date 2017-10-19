@@ -1588,6 +1588,7 @@
 
 	p {
 		margin: 0 0 2.25em 0;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1703,6 +1704,7 @@
 		color: #aaa;
 		position: relative;
 		margin: 0 0 1.6875em 0;
+		text-align: inherit;
 	}
 
 	header h2 + p {
